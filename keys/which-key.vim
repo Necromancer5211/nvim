@@ -53,6 +53,10 @@ let g:which_key_map['u'] = [ ':UndotreeToggle'                                 ,
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
+"let g:which_key_map[','] = [ ':FloatermNew'                                    , 'Floaterm New ' ]
+"let g:which_key_map[':'] = [ ':FloatermToggle'                                 , 'Floaterm Toggle' ]
+"let g:which_key_map['<'] = [ ':FloatermPrev'                                   , 'Floaterm Prev' ]
+"let g:which_key_map['>'] = [ ':FloatermNext'                                   , 'Floaterm Next' ]
 
 " Group mappings
 
@@ -119,7 +123,7 @@ let g:which_key_map.d = {
       \ }
 
 " f is for find and replace
-let g:which_key_map.f = {
+let g:which_key_map.r = {
       \ 'name' : '+find & replace' ,
       \ 'f' : [':Farr --source=vimgrep'    , 'file'],
       \ 'p' : [':Farr --source=rgnvim'     , 'project'],
@@ -326,7 +330,9 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=normal --height=6'        , 'terminal'],
+      \ ';' : [':FloatermNew --wintype=normal --height=6'       , 'terminal'],
+      \ ',' : [':FloatermPrev'                                  , 'Previous terminal'],
+      \ '.' : [':FloatermNext'                                  , 'Next terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],

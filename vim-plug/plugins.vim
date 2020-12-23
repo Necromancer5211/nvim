@@ -29,7 +29,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ChristianChiarulli/vscode-easymotion'
     Plug 'machakann/vim-highlightedyank'
   else
-
+    "SuperTab
+"    Plug 'ervandew/supertab'
     " Easymotion
     Plug 'easymotion/vim-easymotion'
     " Surround
@@ -55,7 +56,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
-    Plug 'glepnir/galaxyline.nvim'
+    "Plug 'glepnir/galaxyline.nvim'
     Plug 'kevinhwang91/rnvimr'
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -113,8 +114,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'szw/vim-maximizer'
     " Neovim in Browser
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    " Nord theme
+    Plug 'arcticicestudio/nord-vim'
+    " Solorized theme
+    Plug 'lifepillar/vim-solarized8'
+    "Gruvbox Theme
+    Plug 'morhetz/gruvbox'
     " Rainbow brackets
-    " Plug 'luochen1990/rainbow'
+    Plug 'luochen1990/rainbow'
     " Async Linting Engine
     " TODO make sure to add ale config before plugin
     " Plug 'dense-analysis/ale'
@@ -155,10 +162,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Echo doc
     " Plug 'Shougo/echodoc.vim'
     " Plug 'hardcoreplayers/spaceline.vim'
-    " Plug 'vim-airline/vim-airline'
-    " Plug 'vim-airline/vim-airline-themes'
+     Plug 'vim-airline/vim-airline'
+     Plug 'vim-airline/vim-airline-themes'
     " Ranger
-    " Plug 'francoiscabrol/ranger.vim'
+     Plug 'francoiscabrol/ranger.vim'
     " Plug 'rbgrouleff/bclose.vim'
     " Making stuff
     " Plug 'neomake/neomake'

@@ -59,6 +59,12 @@ else
   nnoremap <C-k> <C-w>k
   nnoremap <C-l> <C-w>l
 
+  "Floaterm
+  tnoremap <A-,> :FloatermPrev<CR>
+  tnoremap <A-.> :FloatermNext<CR>
+  tnoremap <A-;> :FloatermToggle<CR>
+  tnoremap <A-'> :FloatermNew<CR>
+
   " Terminal window navigation
   tnoremap <C-h> <C-\><C-N><C-w>h
   tnoremap <C-j> <C-\><C-N><C-w>j
@@ -68,7 +74,8 @@ else
   inoremap <C-j> <C-\><C-N><C-w>j
   inoremap <C-k> <C-\><C-N><C-w>k
   inoremap <C-l> <C-\><C-N><C-w>l
-  tnoremap <Esc> <C-\><C-n>
+  tnoremap jk <Esc> <C-\><C-n>
+  tnoremap kj <Esc> <C-\><C-n>
 
   " Use alt + hjkl to resize windows
   " nnoremap <silent> <M-j>    :resize -2<CR>
